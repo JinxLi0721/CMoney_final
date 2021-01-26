@@ -1,0 +1,157 @@
+extends layout 
+block content
+    <!-- h1= title
+    p Welcome to #{title} -->
+    <div class="container-fluid" style="padding-left:10%;padding-right:10%;" >
+      <div class="row bg-dark mb-2">
+          <h1 class="text-white" style="text-align: center">JO!自習</h1>
+      </div>
+      <div class="row" id="main">
+        <div class="col-8">
+          <div class="inner">
+            <!-- Header -->
+            <header id="header">
+              <a href="/api/register" class="logo">加入會員</a>
+              <ul class="icons">
+                <li>
+                  <a href="/api/register" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
+                </li>
+                <li>
+                  <a href="/api/register" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
+                </li>
+                <li>
+                  <a href="/api/register" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
+                </li>
+                <li>
+                  <a href="/api/register" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+                </li>
+                <li>
+                  <a href="/api/register" class="icon brands fa-medium-m"><span class="label">Medium</span></a>
+                </li>
+              </ul>
+            </header>
+            <!-- Banner -->
+            <section id="banner">
+              <div class="content">
+                <header>
+                  <h1></h1>
+                  <p></p>
+                </header>
+                <p>看書太孤單?快來找人一起拚!!</p>
+                <ul class="actions">
+                  <li><a href="/api/register" class="button big">加入</a></li>
+                </ul>
+              </div>
+              <span class="image object">
+                <img src="/images/student_1208.jpg" alt="" />
+              </span>
+            </section>
+              
+            <!-- Section -->
+            <section>
+              <header class="major">
+                <a href="/api/studyRoom" ><h2>自習室大廳</h2></a>
+                
+              </header>
+              <div class="posts">
+                <article>
+                  <a href="#" class="image"><img src="/images/pic01.jpg" alt=""/></a>
+                  <h3>國考自習室</h3>
+                  <p>想當公務員的快來!!!!</p>
+                  <button onclick="showDialog()" class="button">進入</button>
+                </article>
+                <article>
+                  <a href="#" class="image"><img src="/images/pic02.jpg" alt=""/></a>
+                  <h3>中油招考自習室</h3>
+                  <p>/<加油不用錢>/</p>
+                  <ul class="actions">
+                    <button onclick="showDialog()" class="button">進入</button>
+                  </ul>
+                </article>
+                <article>
+                  <a href="#" class="image"><img src="/images/pic03.jpg" alt=""/></a>
+                  <h3>高普考自習室</h3>
+                  <p>鐵飯碗俱樂部招生啦!!</p>
+                  <button onclick="showDialog()" class="button">進入</button>
+                  
+                </article>
+                <article>
+                  <a href="#" class="image"><img src="/images/pic04.jpg" alt=""/></a>
+                  <h3>英文托福自習室</h3>
+                  <p>開口說英文交給我</p>
+                  <button onclick="showDialog()" class="button">進入</button>
+                </article>
+                <article>
+                  <a href="#" class="image"><img src="/images/pic05.jpg" alt=""/></a>
+                  <h3>導遊執照自習室</h3>
+                  <p>公司出錢讓你環遊世界</p>
+                  <button onclick="showDialog()" class="button">進入</button>
+                </article>
+                <article>
+                  <a href="#" class="image"><img src="/images/pic06.jpg" alt=""/></a>
+                  <h3>其他自習室</h3>
+                  <p>想看書自己來</p>
+                  <button onclick="showDialog()" class="button">進入</button>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="col-4 pb-3">
+          <div class="inner">
+            <section>
+              <header class="major">
+                <h2>登入會員</h2>
+              </header>
+              <div class="mini-posts">
+              <article>
+                <label>帳號:</label>
+                <input type="text" name="myacc" class="">
+                <label>密碼:</label>
+                <input type="password" name="mypwd" class="" >
+              </article>
+              </div>
+              <ul class="actions">
+                <li><a href="#" class="button m-4">登入</a></li>
+              </ul>
+            </section>
+          <!-- Section -->
+            <section>
+              <header class="major">
+                <h2>聯絡我們</h2>
+              </header>
+              <ul class="contact">
+                <li class="icon solid fa-envelope"><a href="#">CMoney@gmail.com</a></li>
+                <li class="icon solid fa-phone">(02) 798-8888</li>
+                <li class="icon solid fa-home">板橋市文化路一段285號15樓</li>
+              </ul>
+            </section>
+          <!-- Footer -->
+            <footer id="footer">
+              <p class="copyright">&copy;CMoney<a href="">戰鬥營小教室</a></p>
+            </footer>
+          </div>
+
+          <div class="dialog" id="dialog" style="padding: 3em;">
+            <form>
+                <p>輸入您的專注時間：<input type="text" id="" /></p>
+                <p>輸入您的休息時間：<input type="text" id="" /></p>
+                <p>輸入您想專注的回合次數：<input type="text"/>
+                </p>
+                <div style="float: right;">
+                  <button class="button" ng-click="closeDialog()">取消</button>
+                  <button class="button" ng-click="">儲存</button>
+                </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    script.
+      var dialog;
+      window.onload=function(){ dialog=document.getElementById("dialog"); };
+      function showDialog(){ dialog.style.display="block"; }
+      function closeDialog(){ dialog.style.display="none"; } 
+  
+    

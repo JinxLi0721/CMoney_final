@@ -1,0 +1,26 @@
+{
+  "name": "final",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "ssh": "ssh p0929513319@35.229.219.152 -p 22 -i ~/.ssh/finalproject",
+    "redis": "redis ~/../../Program Files/redis/Redis-x64-3.2.100/redis-cli -h 127.0.0.1 -p 6379 "
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.4.17",
+    "nodemailer-mailgun-transport": "^2.0.2",
+    "pug": "2.0.0-beta11",
+    "redis": "^3.0.2"
+  }
+}
