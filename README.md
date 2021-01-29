@@ -28,6 +28,7 @@ config/index.js
 
 ```host: "127.0.0.1", ```
 
+2.3 將schema匯入，[MySQL Workbench & phpMyAdmin 匯出／匯入（備份）完整 MySQL 資料庫教學](https://mnya.tw/cc/word/1395.html)
 
 ## 3. Run Project
 
